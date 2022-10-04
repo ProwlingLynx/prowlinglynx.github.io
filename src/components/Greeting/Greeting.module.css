@@ -1,0 +1,9 @@
+.greeting {
+  display: flex;
+  flex-direction: row;
+}
+
+.greeting img {
+  width: 10rem;
+  height: 10rem;
+}
