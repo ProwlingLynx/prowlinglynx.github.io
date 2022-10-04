@@ -1,0 +1,9 @@
+.bio {
+  display: flex;
+  flex-direction: row;
+}
+
+.bio img {
+  width: 10rem;
+  height: 10rem;
+}
