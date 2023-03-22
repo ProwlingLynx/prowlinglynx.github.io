@@ -1,4 +1,3 @@
-import HeadPic from "./HeadPic.jpg";
 import styles from "./Greeting.module.css";
 
 export const Greeting = () => {
@@ -10,7 +9,7 @@ export const Greeting = () => {
         <p>I am a full stack web developer that specializes in creating Typescript and Javascript based solutions. My skill set is always expanding so feel free to reach out even if your needs extend beyond the Javascript ecosystem.</p>
         <button>Get in touch</button>
       </article>
-      <img src={HeadPic} alt="Javier Tamez" />
+      <img src={"https://avatars.githubusercontent.com/u/91586098?v=4"} alt="Javier Tamez" />
     </div>
   );
 };
