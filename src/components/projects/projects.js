@@ -1,7 +1,10 @@
+import {Card} from './projectCard.js';
+
 export const Projects = () => {
   return (
-    <div>
+    <section>
       I'm a Projects thing
-    </div>
+      <Card/>
+    </section>
   )
 }

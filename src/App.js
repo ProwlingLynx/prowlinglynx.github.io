@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-    <article>
+    <article className={`flex-column`}>
       <NavBar />
       <Greeting />
       <Bio />

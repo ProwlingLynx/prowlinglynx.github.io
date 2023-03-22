@@ -1,7 +1,8 @@
 export const Footer = () => {
   return (
-    <div>
-      I'm a footer.
-    </div>
+    <footer>
+      <span>Contact Me!</span>
+      <span>Back to the top</span>
+    </footer>
   )
 }
