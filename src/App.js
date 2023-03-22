@@ -1,6 +1,8 @@
 import {NavBar} from "./components/NavBar";
 import {Greeting} from "./components/Greeting";
 import {Bio} from "./components/Bio";
+import {Footer} from "./components/footer";
+import {Projects} from "./components/projects";
 import './App.css';
 
 
@@ -12,11 +14,13 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <article>
       <NavBar />
       <Greeting />
       <Bio />
-    </>
+      <Projects/>
+      <Footer/>
+    </article>
   );
 }
 
