@@ -6,24 +6,28 @@ export const NavBar = () => {
   const menuHandler = (e) => {
     e.preventDefault();
     const target = menuRef.current;
-    if (target.style.display === 'block') {
+    if (target.style.display === 'flex') {
       target.style.display = 'none';
     } else {
-      target.style.display = 'block';
+      target.style.display = 'flex';
     }
   };
   return (
-    <header className='topnav'>
-      <a href='#home' className='active'>
+    <header className={`${styles.topnav} flex-row`}>
+      <a href='#home' className={`${styles.active}`}>
         JT's Lair
       </a>
-      <nav id='myNavs' ref={menuRef}>
-        <a href='#contact'>Contact Me</a>
-        <a href='#projects'>Projects</a>
-      </nav>
-      <a className={`icon`} onClick={menuHandler}>
+      <a className={`${styles.icon}`} onClick={menuHandler}>
         =
       </a>
+      <nav className={`${styles.myNavs} flex-column`} ref={menuRef}>
+        <a className={`${styles.menuItems}`} href='#contact'>
+          Contact Me
+        </a>
+        <a className={`${styles.menuItems}`} href='#projects'>
+          Projects
+        </a>
+      </nav>
     </header>
   );
 };

@@ -1,0 +1,51 @@
+@media (width < 400px) {
+  .topnav {
+    background-color: var(--background-color);
+    width: 100vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .myNavs {
+    display: none;
+    width: 100vw;
+    flex-basis: 100%;
+  }
+
+  /* Style navigation menu links */
+  .menuItems {
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100vw;
+    margin: auto;
+    padding-left: 1rem;
+    border-bottom: var(--accent-color) solid 1px;
+  }
+
+  /* Style the hamburger menu */
+  .icon {
+    background: var(--accent-color);
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+
+  /* Add a grey background color on mouse-over */
+  .menuItems:hover {
+    background-color: var(--highlight-color);
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+    margin: auto;
+    font-size: 2rem;
+  }
+}
