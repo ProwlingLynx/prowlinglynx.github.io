@@ -12,19 +12,23 @@ export const NavBar = () => {
       target.style.display = 'flex';
     }
   };
+  const handlClose = (e) => {
+    e.preventDefault();
+    menuRef.current.style.display = 'none';
+  };
   return (
     <header className={`${styles.topnav} flex-row`}>
       <a href='#home' className={`${styles.active}`}>
         JT's Lair
       </a>
-      <a className={`${styles.icon}`} onClick={menuHandler}>
+      <button className={`${styles.icon}`} onClick={menuHandler}>
         =
-      </a>
+      </button>
       <nav className={`${styles.myNavs} flex-column`} ref={menuRef}>
-        <a className={`${styles.menuItems}`} href='#contact'>
+        <a className={`${styles.menuItems}`} href='#contact' onClick={handlClose}>
           Contact Me
         </a>
-        <a className={`${styles.menuItems}`} href='#projects'>
+        <a className={`${styles.menuItems}`} href='#projects' onClick={handlClose}>
           Projects
         </a>
       </nav>
