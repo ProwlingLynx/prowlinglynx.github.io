@@ -1,14 +1,57 @@
-.NavBar {
-  display: flex;
-  flex-direction: row;
+.topnav {
+  background-color: var(--background-color);
+  width: 100vw;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  height: 3rem;
-  background-color: #fff;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
-h2 {
-  border-right: 1px solid #ccc;
-  padding-right: 2rem;
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.myNavs {
+  display: none;
+  width: 100vw;
+  flex-basis: 100%;
+}
+
+/* Style navigation menu links */
+.menuItems {
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100vw;
+  margin: auto;
+  padding-left: 1rem;
+  border-bottom: var(--accent-color) solid 1px;
+}
+
+/* Style the hamburger menu */
+.icon {
+  background: var(--accent-color);
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  color: var(--secondary-text-color);
+  padding: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.menuItems:hover,
+.icon:hover {
+  background-color: var(--highlight-color);
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: var(--background-color);
+  color: var(--secondary-text-color);
+  margin: auto;
+  font-size: 2rem;
+}
+
+@media (width > 500px) {
+  .menuItems {
+    text-align: center;
+  }
 }

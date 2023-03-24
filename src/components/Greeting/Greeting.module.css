@@ -1,9 +1,29 @@
-.greeting {
-  display: flex;
-  flex-direction: row;
+.greetHeader {
+  flex-basis: 50%;
 }
 
-.greeting img {
-  width: 10rem;
-  height: 10rem;
+.greetPicture {
+  flex-basis: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 3.5rem;
+  border: 2px solid var(--secondary-background-color);
+  padding: 0.25rem;
+}
+
+.greetingButton {
+  margin-left: 1rem;
+}
+
+@media (width >= 500px) {
+  .imageContainer {
+    justify-content: space-between;
+  }
+  .greetPicture {
+    width: 5rem;
+    height: 8rem;
+    max-width: 150px;
+    max-height: 250px;
+    border-radius: 10px;
+  }
 }
