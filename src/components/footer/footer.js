@@ -1,8 +1,10 @@
 export const Footer = () => {
   return (
-    <footer>
-      <span>Contact Me!</span>
-      <span>Back to the top</span>
+    <footer className={`flex-row`}>
+      <nav>
+        <button>Contact Me!</button>
+        <button>Back to the top</button>
+      </nav>
     </footer>
-  )
-}
+  );
+};
