@@ -1,10 +1,9 @@
-import {NavBar} from "./components/NavBar";
-import {Greeting} from "./components/Greeting";
-import {Bio} from "./components/Bio";
-import {Footer} from "./components/footer";
-import {Projects} from "./components/projects";
+import { NavBar } from './components/NavBar';
+import { Greeting } from './components/Greeting';
+import { Bio } from './components/Bio';
+import { Footer } from './components/footer';
+import { Projects } from './components/projects';
 import './App.css';
-
 
 /**
  * Renders the app views.
@@ -17,9 +16,9 @@ function App() {
     <article className={`flex-column`}>
       <NavBar />
       <Greeting />
+      <Projects />
       <Bio />
-      <Projects/>
-      <Footer/>
+      <Footer />
     </article>
   );
 }
