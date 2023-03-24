@@ -15,9 +15,13 @@ function App() {
   return (
     <article className={`flex-column`}>
       <NavBar />
+      <hr />
       <Greeting />
+      <hr />
       <Projects />
+      <hr />
       <Bio />
+      <hr />
       <Footer />
     </article>
   );

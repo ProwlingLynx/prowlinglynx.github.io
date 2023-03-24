@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+}
+
+.footerNav {
+  padding: 1rem;
+  width: 100%;
+  justify-content: left;
+  gap: 5rem;
+}
